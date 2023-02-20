@@ -16,6 +16,9 @@ TagManager:
   - shop
   - frog
   - heaven
+  - SpawnPoint
+  - Rooms
+  - wall
   layers:
   - Default
   - TransparentFX
