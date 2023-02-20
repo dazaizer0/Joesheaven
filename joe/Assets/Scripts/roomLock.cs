@@ -5,17 +5,23 @@ using UnityEngine;
 public class roomLock : MonoBehaviour
 {
     public Transform room;
-    public GameObject enemy;
     public bool can = true;
+    public GameObject dors;
+    public GameObject spawner;
 
     void Start()
     {
-
+        dors.SetActive(false);
+        spawner.SetActive(false);
     }
 
     void Update()
     {
-
+        if(can == false)
+        {
+            Destroy(dors.gameObject, 16);
+            Destroy(spawner.gameObject, 13);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -23,10 +29,15 @@ public class roomLock : MonoBehaviour
         if (other.tag == "Player" && can == true)
         {
             can = false;
-            for(int i = 0; i < 2; i++){
+
+            dors.SetActive(true);
+            spawner.SetActive(true);
+
+            /*for(int i = 0; i < 5; i++)
+            {
                 Vector3 pos = new Vector3(room.position.x, room.position.y);
                 Instantiate(enemy, pos, Quaternion.identity);
-            }
+            }*/
         }
     }
 }

@@ -8,34 +8,37 @@ public class enemySpawner : MonoBehaviour
     [SerializeField]
     public GameObject enemy_f;
     public GameObject enemy_a;
-    public GameObject enemy_e;
-    public GameObject enemy_frog;
 
 
     [Header("interval")]
-    public float enemyEInterval;
-    public float enemyFROGInterval;
     public float enemyFInterval;
     public float enemyAInterval;
+
+    public bool start = false;
 
 
     void Start()
     {
-        StartCoroutine(spawnEnemy(enemyFROGInterval, enemy_frog));
-        StartCoroutine(spawnEnemy(enemyEInterval, enemy_e));
         StartCoroutine(spawnEnemy(enemyAInterval, enemy_a));
         StartCoroutine(spawnEnemy(enemyFInterval, enemy_f));
     }
-
     void Update()
     {
-        
+        if(start == false)
+        {
+            StartCoroutine(spawnEnemy(enemyAInterval, enemy_a));
+            StartCoroutine(spawnEnemy(enemyFInterval, enemy_f));
+            start = true;
+        }else
+        {
+            Debug.Log("started");
+        }
     }
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
         yield return new WaitForSeconds(interval);
-        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-24f, 24), Random.Range(-12f, 12f), 0), Quaternion.identity);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-4f, 4f), Random.Range(-4f, 4f), 0), Quaternion.identity);
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 }
