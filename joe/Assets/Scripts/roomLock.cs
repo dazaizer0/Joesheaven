@@ -5,14 +5,18 @@ using UnityEngine;
 public class roomLock : MonoBehaviour
 {
     public Transform room;
+
     public bool can = true;
+
     public GameObject dors;
+
     public GameObject spawner;
+    public float spawnerLifeTime;
 
     void Start()
     {
         dors.SetActive(false);
-        spawner.SetActive(false);
+        //spawner.SetActive(false);
     }
 
     void Update()
@@ -20,7 +24,7 @@ public class roomLock : MonoBehaviour
         if(can == false)
         {
             Destroy(dors.gameObject, 16);
-            Destroy(spawner.gameObject, 13);
+            Destroy(spawner.gameObject, spawnerLifeTime);
         }
     }
 
@@ -30,14 +34,11 @@ public class roomLock : MonoBehaviour
         {
             can = false;
 
-            dors.SetActive(true);
-            spawner.SetActive(true);
+            Vector3 SpawnerPosition = new Vector3(room.position.x, room.position.y, room.position.z);
+            Instantiate(spawner, SpawnerPosition, Quaternion.identity);
 
-            /*for(int i = 0; i < 5; i++)
-            {
-                Vector3 pos = new Vector3(room.position.x, room.position.y);
-                Instantiate(enemy, pos, Quaternion.identity);
-            }*/
+            dors.SetActive(true);
+           // spawner.SetActive(true);
         }
     }
 }
