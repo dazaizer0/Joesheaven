@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class enemySpawner : MonoBehaviour
 {
+    public GameObject sp1;
+    public GameObject sp2;
+    public GameObject sp3;
+    public GameObject sp4;
+    public GameObject sp5;
+
     [Header("enemys")]
     [SerializeField]
     public GameObject enemy_f;
@@ -43,7 +49,37 @@ public class enemySpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(interval);
 
-        GameObject newEnemy = Instantiate(enemy, new Vector3(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+        int sp = Random.Range(1, 5);
+
+        if(sp == 1)
+        {
+            Vector3 pos = new Vector3(sp1.transform.position.x, sp1.transform.position.y);
+            GameObject newEnemy = Instantiate(enemy, pos, Quaternion.identity);
+        }
+
+        if(sp == 2)
+        {
+            Vector3 pos = new Vector3(sp2.transform.position.x, sp2.transform.position.y);
+            GameObject newEnemy = Instantiate(enemy, pos, Quaternion.identity);
+        }
+
+        if(sp == 3)
+        {
+            Vector3 pos = new Vector3(sp3.transform.position.x, sp3.transform.position.y);
+            GameObject newEnemy = Instantiate(enemy, pos, Quaternion.identity);
+        }
+
+        if(sp == 4)
+        {
+            Vector3 pos = new Vector3(sp4.transform.position.x, sp4.transform.position.y);
+            GameObject newEnemy = Instantiate(enemy, pos, Quaternion.identity);
+        }
+
+        if(sp == 5)
+        {
+            Vector3 pos = new Vector3(sp5.transform.position.x, sp5.transform.position.y);
+            GameObject newEnemy = Instantiate(enemy, pos, Quaternion.identity);
+        }
 
         StartCoroutine(spawnEnemy(interval, enemy));
     }
