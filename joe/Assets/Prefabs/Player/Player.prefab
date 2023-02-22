@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 3532581348201202276}
   - component: {fileID: 3532581348201202302}
   - component: {fileID: 1718329939454205455}
+  - component: {fileID: 6720795022691453631}
   - component: {fileID: 3532581348201202273}
   - component: {fileID: 3532581348201202278}
   m_Layer: 0
@@ -220,6 +221,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera_: {fileID: 1915493544900764853}
+--- !u!114 &6720795022691453631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3532581348201202275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 029236019e03c7e4c8f8240ef8c11a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &3532581348201202273
 Rigidbody2D:
   serializedVersion: 4

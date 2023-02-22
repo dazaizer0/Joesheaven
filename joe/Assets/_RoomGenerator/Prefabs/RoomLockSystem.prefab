@@ -1028,7 +1028,7 @@ MonoBehaviour:
   can: 1
   dors: {fileID: 4546373513330459948}
   spawner: {fileID: 4522186120689088091, guid: ccd9525ea43033a46af7b786002f7b0b, type: 3}
-  spawnerLifeTime: 13
+  spawnerLifeTime: 14
 --- !u!1 &8041306864655203487
 GameObject:
   m_ObjectHideFlags: 0
