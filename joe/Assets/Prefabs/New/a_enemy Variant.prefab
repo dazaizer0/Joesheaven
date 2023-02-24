@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01cb96ddf124b8649b9cda9607c9e2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 5
   bc2d: {fileID: 8057016588231759564}
   speed: 4
   stoppingDistance: 0

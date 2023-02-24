@@ -21,19 +21,16 @@ public class enemySpawner : MonoBehaviour
     public float enemyAInterval;
 
     public bool start = false;
-    public Transform room;
+
 
     void Start()
     {
-        this.transform.SetParent(room.transform);
-
-
         StartCoroutine(spawnEnemy(enemyAInterval, enemy_a));
         StartCoroutine(spawnEnemy(enemyFInterval, enemy_f));
     }
     void Update()
     {
-        Destroy(gameObject, 13);
+        Destroy(gameObject, 5);
         if(start == false)
         {
             StartCoroutine(spawnEnemy(enemyAInterval, enemy_a));

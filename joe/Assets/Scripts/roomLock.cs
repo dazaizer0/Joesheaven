@@ -14,13 +14,14 @@ public class roomLock : MonoBehaviour
     public float spawnerLifeTime;
 
     bool end = false;
+    private bool allowToDestroy = true;
 
     public float i = 0;
 
     void Start()
     {
         dors.SetActive(false);
-        //spawner.SetActive(true);
+        spawner.SetActive(true);
     }
 
     void Update()
@@ -29,16 +30,9 @@ public class roomLock : MonoBehaviour
         {
             i += 1 * Time.deltaTime;
 
-            if(i >= 15)
+            if(i >= 7)
             {
-                //DestroyImmediate(this.dors);
-                DestroyImmediate(this.spawner);
-
-                //spawner.SetActive(false);
                 dors.SetActive(false);
-
-                //DestroyImmediate(dors.gameObject);
-                //DestroyImmediate(spawner.gameObject);
                 i = 0;
 
                 end = true;
