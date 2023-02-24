@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_OldJoe/Scenes/Menu.unity
-    guid: f20692f16c5deea45850dd66f00fc54c
-  - enabled: 1
-    path: Assets/_OldJoe/Scenes/Sandbox.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/_OldJoe/Scenes/ACH.unity
-    guid: 2f131ee10fe15bd48a31e19780f37a33
+    path: Assets/Scenes/Game/StageOne.unity
+    guid: cb8b4555b8cbaa74887a9ba9904326fd
   m_configObjects: {}

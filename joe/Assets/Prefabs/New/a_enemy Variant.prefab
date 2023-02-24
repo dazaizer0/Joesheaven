@@ -81,6 +81,7 @@ MonoBehaviour:
   stoppingDistance: 0
   retreatDistance: 0
   player: {fileID: 0}
+  effect: {fileID: 2515960312401731157, guid: a0cf92bddb243bd4e959bc0844133f78, type: 3}
   geting_damage: 1
 --- !u!61 &8057016588231759564 stripped
 BoxCollider2D:

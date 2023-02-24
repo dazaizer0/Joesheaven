@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class fallowingEnemy : MonoBehaviour
 {
-    public float health = 30;
+    public float health;
     public BoxCollider2D bc2d;
 
     public float speed;
@@ -12,6 +12,7 @@ public class fallowingEnemy : MonoBehaviour
     public float retreatDistance;
 
     public Transform player;
+    public GameObject effect;
 
     public float geting_damage;
 
@@ -22,9 +23,12 @@ public class fallowingEnemy : MonoBehaviour
 
     void Update()
     {
-
+        
         if (health <= 0)
         {
+            Vector3 effectPos = new Vector3(transform.position.y, transform.position.y);
+            Instantiate(effect, effectPos, Quaternion.identity);
+
             Destroy(gameObject);
         }
 

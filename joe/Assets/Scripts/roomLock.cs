@@ -13,18 +13,39 @@ public class roomLock : MonoBehaviour
     public GameObject spawner;
     public float spawnerLifeTime;
 
+    bool end = false;
+
+    public float i = 0;
+
     void Start()
     {
         dors.SetActive(false);
-        //spawner.SetActive(false);
+        //spawner.SetActive(true);
     }
 
     void Update()
     {
-        if(can == false)
+        if(can == false && end == false)
         {
-            Destroy(dors.gameObject, 16);
-            Destroy(spawner.gameObject, spawnerLifeTime);
+            i += 1 * Time.deltaTime;
+
+            if(i >= 15)
+            {
+                //DestroyImmediate(this.dors);
+                DestroyImmediate(this.spawner);
+
+                //spawner.SetActive(false);
+                dors.SetActive(false);
+
+                //DestroyImmediate(dors.gameObject);
+                //DestroyImmediate(spawner.gameObject);
+                i = 0;
+
+                end = true;
+            }
+
+            //Destroy(dors.gameObject, 16);
+            //Destroy(spawner.gameObject, spawnerLifeTime);
         }
     }
 
@@ -38,7 +59,6 @@ public class roomLock : MonoBehaviour
             Instantiate(spawner, SpawnerPosition, Quaternion.identity);
 
             dors.SetActive(true);
-           // spawner.SetActive(true);
         }
     }
 }

@@ -6,6 +6,7 @@ public class BULLET : MonoBehaviour
 {
     public float lifeTime;
     public Collider2D collider2d;
+    public GameObject effect;
 
     void Start()
     {
@@ -19,6 +20,8 @@ public class BULLET : MonoBehaviour
 
     IEnumerator DeathDelay()
     {
+        
+
         yield return new WaitForSeconds(lifeTime);
         Destroy(gameObject);
     }
@@ -26,9 +29,19 @@ public class BULLET : MonoBehaviour
     {
         if (other.tag == "stop")
         {
+            playEffect();
+
             GetComponent<Collider2D>();
             Destroy(gameObject);
 
         }
+        if (other.tag == "damage")
+        {
+            playEffect();
+        }
+    }
+    public void playEffect()
+    {
+        Instantiate(effect, transform.position, Quaternion.identity);
     }
 }
