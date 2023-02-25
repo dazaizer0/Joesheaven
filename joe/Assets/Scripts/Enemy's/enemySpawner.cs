@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class enemySpawner : MonoBehaviour
 {
+    public float lt;
+
     public GameObject sp1;
     public GameObject sp2;
     public GameObject sp3;
@@ -25,17 +27,18 @@ public class enemySpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(spawnEnemy(enemyAInterval, enemy_a));
-        StartCoroutine(spawnEnemy(enemyFInterval, enemy_f));
+        //StartCoroutine(spawnEnemy(enemyAInterval, enemy_a));
+        //StartCoroutine(spawnEnemy(enemyFInterval, enemy_f));
     }
     void Update()
     {
-        Destroy(gameObject, 5);
+        Destroy(gameObject, lt);
         if(start == false)
         {
             StartCoroutine(spawnEnemy(enemyAInterval, enemy_a));
             StartCoroutine(spawnEnemy(enemyFInterval, enemy_f));
             start = true;
+
         }else
         {
             Debug.Log("started");

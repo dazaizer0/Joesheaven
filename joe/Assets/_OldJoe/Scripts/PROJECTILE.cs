@@ -10,6 +10,7 @@ public class PROJECTILE : MonoBehaviour
 
     private Transform player;
     private Vector2 target;
+    public GameObject effect;
 
     void Start()
     {
@@ -38,9 +39,18 @@ public class PROJECTILE : MonoBehaviour
         {
             DestroyProjectile();
         }
+        //if (other.CompareTag("stop"))
+        //{
+        //    DestroyProjectile();
+        //}
     }
     void DestroyProjectile()
     {
+        playEffect();
         Destroy(gameObject);
+    }
+    public void playEffect()
+    {
+        Instantiate(effect, transform.position, Quaternion.identity);
     }
 }

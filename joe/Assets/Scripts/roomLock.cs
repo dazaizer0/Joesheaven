@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class roomLock : MonoBehaviour
 {
+    public float room_time;
+
     public Transform room;
 
     public bool can = true;
@@ -21,7 +23,6 @@ public class roomLock : MonoBehaviour
     void Start()
     {
         dors.SetActive(false);
-        spawner.SetActive(true);
     }
 
     void Update()
@@ -30,7 +31,7 @@ public class roomLock : MonoBehaviour
         {
             i += 1 * Time.deltaTime;
 
-            if(i >= 7)
+            if(i >= room_time)
             {
                 dors.SetActive(false);
                 i = 0;

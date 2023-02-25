@@ -1027,6 +1027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119715c7b9a7214458cf3d72144aa879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  room_time: 16
   room: {fileID: 0}
   can: 1
   dors: {fileID: 4546373513330459948}

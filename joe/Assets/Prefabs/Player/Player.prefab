@@ -233,6 +233,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 029236019e03c7e4c8f8240ef8c11a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healt: 100
+  health_text: {fileID: 0}
+  damage_true: {fileID: 0}
+  score: 0
+  score_text: {fileID: 0}
+  timerActive: 0
+  coin: 0
+  coin_text: {fileID: 0}
 --- !u!50 &3532581348201202273
 Rigidbody2D:
   serializedVersion: 4
@@ -353,7 +361,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: -7075727034388183074, guid: d22bf8d9af6aefa44a8e162bd7482a5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
