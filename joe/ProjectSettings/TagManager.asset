@@ -23,6 +23,7 @@ TagManager:
   - camDown
   - camRight
   - camLeft
+  - petfrog
   layers:
   - Default
   - TransparentFX

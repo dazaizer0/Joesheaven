@@ -13,6 +13,7 @@ public class playerStats : MonoBehaviour
     [Header("Health - checker")]
     public Image damage_true;
 
+
     [Header("Score")]
     public float score;
     public TextMeshProUGUI score_text;
@@ -24,6 +25,7 @@ public class playerStats : MonoBehaviour
 
     void Start()
     {
+        score = PlayerPrefs.GetFloat("act_score");
         damage_true.enabled = false;
 
         // totext
@@ -50,6 +52,8 @@ public class playerStats : MonoBehaviour
         {
             healt = 0;
             Time.timeScale = 0f;
+            
+            PlayerPrefs.DeleteKey("act_float");
         }
     }
 
@@ -66,6 +70,10 @@ public class playerStats : MonoBehaviour
             healt -= 3;
             totext(health_text, healt);
             damage_taken();
+        }
+        if(other.tag == "heaven")
+        {
+            PlayerPrefs.SetFloat("act_score", score);
         }
     }
      void OnTriggerExit2D(Collider2D other)

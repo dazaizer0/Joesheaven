@@ -39,6 +39,10 @@ public class PROJECTILE : MonoBehaviour
         {
             DestroyProjectile();
         }
+        if (other.CompareTag("petfrog"))
+        {
+            DestroyProjectile();
+        }
         //if (other.CompareTag("stop"))
         //{
         //    DestroyProjectile();

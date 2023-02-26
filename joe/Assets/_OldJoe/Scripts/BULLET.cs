@@ -35,6 +35,11 @@ public class BULLET : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if (other.tag == "petfrog")
+        {
+            playEffect();
+
+        }
         if (other.tag == "damage")
         {
             playEffect();

@@ -53,6 +53,12 @@ public class fallowingEnemy : MonoBehaviour
             damage();
 
         }
+        if (other.tag == "petfrog")
+        {
+            GetComponent<BoxCollider2D>();
+            damage();
+
+        }
     }
     public void damage()
     {
