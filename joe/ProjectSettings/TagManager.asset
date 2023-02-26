@@ -24,6 +24,7 @@ TagManager:
   - camRight
   - camLeft
   - petfrog
+  - drop
   layers:
   - Default
   - TransparentFX

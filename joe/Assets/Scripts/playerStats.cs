@@ -65,6 +65,11 @@ public class playerStats : MonoBehaviour
             totext(health_text, healt);
             damage_taken();
         }
+        if (other.tag == "drop")
+        {
+            coin += 1;
+            totext(coin_text, coin);
+        }
         if (other.tag == "shoot_damage")
         {
             healt -= 3;

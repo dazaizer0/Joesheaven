@@ -13,6 +13,7 @@ public class roomLock : MonoBehaviour
     public GameObject dors;
 
     public GameObject spawner;
+    public GameObject drop;
     public float spawnerLifeTime;
 
     bool end = false;
@@ -34,6 +35,8 @@ public class roomLock : MonoBehaviour
             if(i >= room_time)
             {
                 dors.SetActive(false);
+                Vector3 SpawnerPosition = new Vector3(room.position.x, room.position.y, room.position.z);
+                Instantiate(drop, SpawnerPosition, Quaternion.identity);
                 i = 0;
 
                 end = true;

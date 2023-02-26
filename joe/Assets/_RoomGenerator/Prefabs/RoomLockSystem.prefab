@@ -1032,6 +1032,7 @@ MonoBehaviour:
   can: 1
   dors: {fileID: 4546373513330459948}
   spawner: {fileID: 4522186120689088091, guid: ccd9525ea43033a46af7b786002f7b0b, type: 3}
+  drop: {fileID: 7331400800855565218, guid: b86c6f5489570424581ac24184be2e75, type: 3}
   spawnerLifeTime: 14
   i: 0
 --- !u!61 &6475967858696238724
