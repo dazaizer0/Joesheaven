@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
@@ -51,7 +52,7 @@ public class playerStats : MonoBehaviour
         if (healt <= 0)
         {
             healt = 0;
-            Time.timeScale = 0f;
+            SceneManager.LoadScene(0);
             
             PlayerPrefs.DeleteKey("act_float");
         }
