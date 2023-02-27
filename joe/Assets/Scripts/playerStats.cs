@@ -13,6 +13,8 @@ public class playerStats : MonoBehaviour
     public float healt = 100;
     public TextMeshProUGUI health_text;
 
+    public bool health_bought;
+
     [Header("Health - checker")]
     public Image damage_true;
 
@@ -40,6 +42,21 @@ public class playerStats : MonoBehaviour
 
     void Update()
     {
+        if (coin < 0)
+        {
+            coin = 0;
+        }
+
+        if(healt > 100)
+        {
+            healt = 100;
+        }
+
+        if(healt < 100)
+        {
+            healt += 1 * (Time.deltaTime / 6);
+        }
+
         // totext
         totext(score_text, score);
         totext(health_text, healt);
@@ -115,5 +132,14 @@ public class playerStats : MonoBehaviour
     {
         shop.enabled = false;
         Time.timeScale = 1f;
+    }
+
+    public void buy_health()
+    {
+        if(health_bought == false && coin >= 3)
+        {
+            healt += 20;
+            coin -= 3;
+        }
     }
 }

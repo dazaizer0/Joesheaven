@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
 
     [Header("Shop")]
+    public playerStats player;
     private bool speed_bought = false;
     private bool shoot_bought = false;
 
@@ -120,19 +121,25 @@ public class PlayerController : MonoBehaviour
 
     public void buy_speed()
     {
-        if(speed_bought == false)
+        if(speed_bought == false && player.coin >= 3)
         {
             speed += 3;
+
             speed_bought = true;
+
+            player.coin -= 3;
         }
     }
     public void buy_shoot()
     {
-        if(shoot_bought == false)
+        if(shoot_bought == false && player.coin >= 4)
         {
             FireDelay = 0.18f;
             bulletSpeed = 11f;
+            
             shoot_bought = true;
+
+            player.coin -= 4;
         }
     }
 }
