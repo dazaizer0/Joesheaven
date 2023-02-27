@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DropDestroy : MonoBehaviour
 {
+    void Update()
+    {
+
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")

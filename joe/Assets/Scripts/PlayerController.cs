@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
     {
         if(shoot_bought == false && player.coin >= 4)
         {
-            FireDelay = 0.18f;
+            FireDelay = 0.19f;
             bulletSpeed = 11f;
             
             shoot_bought = true;
