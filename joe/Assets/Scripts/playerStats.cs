@@ -7,6 +7,8 @@ using TMPro;
 
 public class playerStats : MonoBehaviour
 {
+    public Canvas shop;
+
     [Header("Health")]
     public float healt = 100;
     public TextMeshProUGUI health_text;
@@ -26,6 +28,7 @@ public class playerStats : MonoBehaviour
 
     void Start()
     {
+        shop.enabled = false;
         score = PlayerPrefs.GetFloat("act_score");
         damage_true.enabled = false;
 
@@ -81,6 +84,11 @@ public class playerStats : MonoBehaviour
         {
             PlayerPrefs.SetFloat("act_score", score);
         }
+        if (other.tag == "shop")
+        {
+            shop.enabled = true;
+            Time.timeScale = 0f;
+        }
     }
      void OnTriggerExit2D(Collider2D other)
     {
@@ -102,5 +110,10 @@ public class playerStats : MonoBehaviour
     public void damage_taken()
     {
         damage_true.enabled = true;
+    }
+    public void exit_shop()
+    {
+        shop.enabled = false;
+        Time.timeScale = 1f;
     }
 }

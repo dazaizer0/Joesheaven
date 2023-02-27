@@ -6,6 +6,7 @@ using UnityEngine;
 public class ToNext : MonoBehaviour
 {
     public bool pause = false;
+    
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")

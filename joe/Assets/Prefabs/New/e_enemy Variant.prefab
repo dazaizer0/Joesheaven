@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8164508367066876797, guid: abbd57e980e8e6b45a5cedf26598c2b2, type: 3}
       propertyPath: health
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8164508367066876797, guid: abbd57e980e8e6b45a5cedf26598c2b2, type: 3}
       propertyPath: player
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8164508367066876798, guid: abbd57e980e8e6b45a5cedf26598c2b2, type: 3}
       propertyPath: m_Name
-      value: e_enemy
+      value: e_enemy Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abbd57e980e8e6b45a5cedf26598c2b2, type: 3}

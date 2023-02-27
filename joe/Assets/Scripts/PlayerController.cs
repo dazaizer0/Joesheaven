@@ -26,6 +26,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public AudioSource shooteffect;
     public Animator animator;
 
+    [Header("Shop")]
+    private bool speed_bought = false;
+    private bool shoot_bought = false;
 
     void Start()
     {
@@ -112,6 +115,24 @@ public class PlayerController : MonoBehaviour
         {
             GetComponent<BoxCollider2D>();
             stoped = false;
+        }
+    }
+
+    public void buy_speed()
+    {
+        if(speed_bought == false)
+        {
+            speed += 3;
+            speed_bought = true;
+        }
+    }
+    public void buy_shoot()
+    {
+        if(shoot_bought == false)
+        {
+            FireDelay = 0.18f;
+            bulletSpeed = 11f;
+            shoot_bought = true;
         }
     }
 }
