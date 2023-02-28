@@ -6,6 +6,11 @@ using UnityEngine;
 public class ToNext : MonoBehaviour
 {
     public bool pause = false;
+
+    void Start()
+    {
+        
+    }
     
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -47,10 +47,10 @@ public class playerStats : MonoBehaviour
             coin = 0;
         }
 
-        if(healt > 100)
-        {
-            healt = 100;
-        }
+        //if(healt > 100)
+        //{
+        //    healt = 100;
+        //}
 
         if(healt < 100)
         {

@@ -36,7 +36,6 @@ public class BossScript : MonoBehaviour
         if(i >= 17)
         {
             heaven.SetActive(true);
-            heaven.SetActive(false);
         }
     }
 

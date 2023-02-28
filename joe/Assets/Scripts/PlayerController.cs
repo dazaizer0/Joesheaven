@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
     public playerStats player;
     private bool speed_bought = false;
     private bool shoot_bought = false;
+    private bool shoot_end = false;
 
     void Start()
     {
@@ -132,7 +133,7 @@ public class PlayerController : MonoBehaviour
     }
     public void buy_shoot()
     {
-        if(shoot_bought == false && player.coin >= 4)
+        if(shoot_bought == false && player.coin >= 4 && shoot_end == false)
         {
             FireDelay = 0.19f;
             bulletSpeed = 11f;
@@ -140,6 +141,15 @@ public class PlayerController : MonoBehaviour
             shoot_bought = true;
 
             player.coin -= 4;
+        }
+        if(shoot_bought == true && player.coin >= 4 && shoot_end == false)
+        {
+            FireDelay = 0.17f;
+            bulletSpeed = 12f;
+            speed += 1;
+            
+            player.coin -= 4;
+            shoot_end = true;
         }
     }
 }

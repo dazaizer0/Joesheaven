@@ -10,17 +10,11 @@ EditorBuildSettings:
     guid: cb8b4555b8cbaa74887a9ba9904326fd
   - enabled: 1
     path: Assets/Scenes/Game/StageTwo.unity
-    guid: 0c04f1d10d89f5241869bf8b5fbe498a
+    guid: e5518289233817b429bc8e0f8ad90e50
   - enabled: 1
-    path: Assets/Scenes/Game/StageThree.unity
-    guid: 0ae534a56f780a140adb44307f75ff3f
-  - enabled: 1
-    path: Assets/Scenes/Game/StageHome.unity
-    guid: d68736245104d654096701dda5251a95
+    path: Assets/Scenes/Game/Home.unity
+    guid: 8cea3311b918328498d8018aaa319e2a
   - enabled: 1
     path: Assets/Scenes/Other/Menu.unity
     guid: c897092d7849dce488369021df4c7dc0
-  - enabled: 1
-    path: Assets/Scenes/Other/SaveManager.unity
-    guid: 95c6e0581a34fc346962700f7b17f303
   m_configObjects: {}

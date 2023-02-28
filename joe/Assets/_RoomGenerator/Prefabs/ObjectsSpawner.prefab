@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 8522050281625855332, guid: 947bfd43d4790104ea3956276127029e, type: 3}
   room: {fileID: 6467853279683952744}
-  howManyObjects: 5
+  howManyObjects: 4
