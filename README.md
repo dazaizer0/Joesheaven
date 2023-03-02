@@ -2,11 +2,11 @@
 
 - https://havenrim.itch.io/
 
-March 16 >> 1.0
-———————————————————————
+- March 16 >> 1.0
 
-Maade with Unity 2021
-———————————————————————
+
+- Maade with Unity 2021
+
 
 PL: Joe, urodzony w Wielkiej Brytanii, obecnie mieszkający w Jerozolimie, będąc głową własnego kościoła „Joe’s Heaven”. 
 Nie ma wielu wyznawców swojej osoby, ponieważ tylko on i jego żaba Fred należą do “Joe’s Heaven”, pomimo tego postanawia wziąć gitarę w rękę i ruszyć w podróż do zaświatów aby przy użyciu magii muzyki blues’owej spełnić swoje powołanie.
