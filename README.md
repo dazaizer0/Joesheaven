@@ -1,7 +1,6 @@
 # Joesheaven
 
 - https://havenrim.itch.io/
-———————————————————————
 
 March 16 >> 1.0
 ———————————————————————
