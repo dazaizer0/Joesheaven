@@ -18,7 +18,7 @@ Dlatego też, postanawia przejść przez wszystkie 9 poziomów ludzkiej świadom
 
 Gra Joe's Heaven przedstawia dziwaczną historię Joe i jego żaby w pierwszym stanie świadomości, w którym próbują oni wyjść z jaskini do której wpadli przy wychodzeniu z domu. 
 
-———————————————————————
+——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
  EN: Joe, born in Great Britain, currently living in Jerusalem, being the head of his own church "Joe’s Heaven". 
 There are not many followers of their person, because only he and his frog Fred belong to "Joe’s Heaven", despite this he decides to take the guitar in his hand and set off on a journey to the afterlife, using the magic of blues music to fulfill his calling.
