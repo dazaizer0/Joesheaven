@@ -1,7 +1,7 @@
 # Joesheaven - portfolio
 - open-source, rogue-like, pixel-art, retro Game
 
-- https://havenrim.itch.io/
+- my other games: https://havenrim.itch.io/
 
 - March 16 >> 1.0
 
