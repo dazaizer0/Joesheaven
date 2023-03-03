@@ -1,4 +1,4 @@
-# Joesheaven - portfolio
+# Joesheaven - 2D portfolio
 - open-source, rogue-like, pixel-art, retro Game
 
 - my other games: https://havenrim.itch.io/
