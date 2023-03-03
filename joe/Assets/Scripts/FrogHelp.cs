@@ -9,6 +9,7 @@ public class FrogHelp : MonoBehaviour
     void Start()
     {
         frog_help_canvas.enabled = false;
+// game made by dazai / Heavenream
     }
 
     void Update()
