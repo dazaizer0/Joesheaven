@@ -1,5 +1,5 @@
-# Joesheaven
-- - open-source, rogue-like, pixel-art, retro Game
+# Joesheaven - portfolio
+- open-source, rogue-like, pixel-art, retro Game
 
 - https://havenrim.itch.io/
 
