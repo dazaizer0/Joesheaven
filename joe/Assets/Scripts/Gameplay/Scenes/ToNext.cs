@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class ToNext : MonoBehaviour
 {
-    public bool pause = false;
-
     void Start()
     {
         
@@ -19,22 +17,5 @@ public class ToNext : MonoBehaviour
             SceneManager.LoadScene("StageTwo");
         }
 
-    }
-    public void Exit(){
-        Application.Quit();
-    }
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape) && pause == false){
-            Time.timeScale = 0f;
-            //pause = true;
-        }
-        if(Input.GetKeyDown(KeyCode.Escape) && pause == true){
-            Time.timeScale = 1f;
-            pause = false;
-        }
-    }
-    public void Resume(){
-        Time.timeScale = 1f;
     }
 }

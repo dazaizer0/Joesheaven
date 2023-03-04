@@ -24,6 +24,7 @@ public class BossScript : MonoBehaviour
     {
         spanwer.SetActive(false);
         heaven.SetActive(false);
+        stop.SetActive(true);
     }
 
     void Update()
@@ -36,6 +37,7 @@ public class BossScript : MonoBehaviour
         if(i >= 17)
         {
             heaven.SetActive(true);
+            stop.SetActive(false);
         }
     }
 
