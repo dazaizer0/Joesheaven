@@ -1,4 +1,5 @@
 # Joesheaven - 2D portfolio
+- 1.0 premiere: March 19, actual 0.9
 - open-source, rogue-like, pixel-art, retro Game
 
 - my other games: https://havenrim.itch.io/
