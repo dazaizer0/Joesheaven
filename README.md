@@ -3,9 +3,6 @@
 
 - my other games: https://havenrim.itch.io/
 
-- March 16 >> 1.0
-
-
 - Maade with Unity 2021
 
 
