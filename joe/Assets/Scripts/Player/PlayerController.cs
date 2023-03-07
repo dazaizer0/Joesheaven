@@ -34,22 +34,26 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
         boxColider.enabled = false;
     }
 
     void Update()
     {
+
         animator.SetFloat("Horizontal", moveDirection.x);
         animator.SetFloat("Vertical", moveDirection.y);
         animator.SetFloat("Speed", moveDirection.sqrMagnitude);
 
         if (stoped == true)
         {
+
             boxColider.enabled = true;
         }
         if (stoped == false)
         {
+
             boxColider.enabled = false;
         }
 
@@ -62,14 +66,15 @@ public class PlayerController : MonoBehaviour
 
         if((shootHor != 0 || shootVer != 0) && Time.time > lastFire + FireDelay)
         {
+
             Shoot(shootHor, shootVer);
             lastFire = Time.time;
         }
-
     }
 
     void Shoot(float x, float y)
     {
+
         shooteffect.Play();
         PLAYER player = new PLAYER();
 
@@ -81,16 +86,18 @@ public class PlayerController : MonoBehaviour
             0
             );
     }
+
     void FixedUpdate()
     {
+
         // MOVEMENT
         Move();
-
     }
 
     // MOVEMENT
     void ProcessInputs()
     {
+
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
@@ -105,16 +112,21 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "stop")
         {
+
             GetComponent<BoxCollider2D>();
             stoped = true;
         }
     }
+
     private void OnTriggerExit2D(Collider2D other)
     {
+
         if (other.tag == "stop")
         {
+
             GetComponent<BoxCollider2D>();
             stoped = false;
         }
@@ -122,8 +134,10 @@ public class PlayerController : MonoBehaviour
 
     public void buy_speed()
     {
+
         if(speed_bought == false && player.coin >= 3)
         {
+
             speed += 3;
 
             speed_bought = true;
@@ -131,10 +145,13 @@ public class PlayerController : MonoBehaviour
             player.coin -= 3;
         }
     }
+
     public void buy_shoot()
     {
+
         if(shoot_bought == false && player.coin >= 4 && shoot_end == false)
         {
+
             FireDelay = 0.19f;
             bulletSpeed = 11f;
             
@@ -142,8 +159,10 @@ public class PlayerController : MonoBehaviour
 
             player.coin -= 4;
         }
+
         if(shoot_bought == true && player.coin >= 4 && shoot_end == false)
         {
+
             FireDelay = 0.17f;
             bulletSpeed = 12f;
             speed += 1;
