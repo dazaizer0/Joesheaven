@@ -7,6 +7,7 @@ using TMPro;
 
 public class playerStats : MonoBehaviour
 {
+
     public Canvas shop;
 
     [Header("Health")]
@@ -30,6 +31,7 @@ public class playerStats : MonoBehaviour
 
     void Start()
     {
+
         shop.enabled = false;
         score = PlayerPrefs.GetFloat("act_score");
         damage_true.enabled = false;
@@ -42,8 +44,10 @@ public class playerStats : MonoBehaviour
 
     void Update()
     {
+
         if (coin < 0)
         {
+
             coin = 0;
         }
 
@@ -54,6 +58,7 @@ public class playerStats : MonoBehaviour
 
         if(healt < 100)
         {
+
             healt += 1 * (Time.deltaTime / 6);
         }
 
@@ -64,6 +69,7 @@ public class playerStats : MonoBehaviour
 
         if(timerActive)
         {
+
             score += Time.deltaTime;
             totext(score_text, score);
         }
@@ -71,6 +77,7 @@ public class playerStats : MonoBehaviour
         // health
         if (healt <= 0)
         {
+
             healt = 0;
             SceneManager.LoadScene(0);
             
@@ -80,64 +87,85 @@ public class playerStats : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "damage")
         {
+
             healt -= 1;
             totext(health_text, healt);
             damage_taken();
         }
+
         if (other.tag == "drop")
         {
+
             coin += 1;
             totext(coin_text, coin);
         }
+
         if (other.tag == "shoot_damage")
         {
+
             healt -= 3;
             totext(health_text, healt);
             damage_taken();
         }
+
         if(other.tag == "heaven")
         {
+
             PlayerPrefs.SetFloat("act_score", score);
         }
+
         if (other.tag == "shop")
         {
+
             shop.enabled = true;
             Time.timeScale = 0f;
         }
     }
+
      void OnTriggerExit2D(Collider2D other)
     {
+
         if (other.tag == "damage")
         {
+
             damage_true.enabled = false;
         }
+
         if (other.tag == "shoot_damage")
         {
+
             damage_true.enabled = false;
         }
-        
     }
 
     public void totext(TextMeshProUGUI text, float liczba)
     {
+
         text.text = liczba.ToString("F1");
     }
+
     public void damage_taken()
     {
+
         damage_true.enabled = true;
     }
+
     public void exit_shop()
     {
+
         shop.enabled = false;
         Time.timeScale = 1f;
     }
 
     public void buy_health()
     {
+
         if(health_bought == false && coin >= 3)
         {
+
             healt += 20;
             coin -= 3;
         }
