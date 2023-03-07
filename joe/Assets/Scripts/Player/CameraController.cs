@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
+
     public static CameraController instance;
     public roomLock currentRoom;
     public float speed;
 
     void Awake()
     {
+
         instance = this;
     }
+
     void Start()
     {
         
@@ -19,12 +22,16 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+
         UpdatePosition();
     }
+
     void UpdatePosition()
     {
+
         if(currentRoom == null)
         {
+
             return;
         }
     }
