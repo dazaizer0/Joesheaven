@@ -292,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6898989257775014620}
   - component: {fileID: 3369237051855338776}
-  - component: {fileID: 2887547938702760627}
+  - component: {fileID: 3930132048711883938}
   m_Layer: 0
   m_Name: tonext
   m_TagString: Untagged
@@ -341,7 +341,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.28, y: 3.28}
   m_EdgeRadius: 0
---- !u!114 &2887547938702760627
+--- !u!114 &3930132048711883938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,10 +350,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2799900918002241431}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dc00a9613b2674f92e2434c5131568, type: 3}
+  m_Script: {fileID: 11500000, guid: 17f43949ffd8a854b9edf8460b4dd6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pause: 0
 --- !u!1 &3052019445143307124
 GameObject:
   m_ObjectHideFlags: 0
