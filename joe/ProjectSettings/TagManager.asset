@@ -25,6 +25,8 @@ TagManager:
   - camLeft
   - petfrog
   - drop
+  - stopShoot
+  - dialog
   layers:
   - Default
   - TransparentFX

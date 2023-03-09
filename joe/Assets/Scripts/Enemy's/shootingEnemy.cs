@@ -70,9 +70,23 @@ public class shootingEnemy : MonoBehaviour
 
             GetComponent<BoxCollider2D>();
             damage();
+<<<<<<< Updated upstream
         }
     }
 
+=======
+        }
+
+        if (other.tag == "stopShoot")
+        {
+
+            Destroy(gameObject);
+        }
+    }
+
+    
+
+>>>>>>> Stashed changes
     public void damage()
     {
 

@@ -50,7 +50,11 @@ public class BossScript : MonoBehaviour
 
     public void Boss_start()
     {
+<<<<<<< Updated upstream
 
+=======
+        
+>>>>>>> Stashed changes
         spanwer.SetActive(true);
         start = true;
     }

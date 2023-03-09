@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -31,11 +32,21 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void Exit(){
+    public void Exit()
+    {
+
         Application.Quit();
     }
 
-    public void Resume(){
+    public void Resstart()
+    {
+        
+        SceneManager.LoadScene("StageOne");
+    }
+
+    public void Resume()
+    {
+
         PauseCanva.enabled = false;
         paused = false;
         Time.timeScale = 1f;

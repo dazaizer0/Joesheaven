@@ -576,8 +576,8 @@ MonoBehaviour:
   sp5: {fileID: 3052019445143307124}
   enemy_f: {fileID: 1558351257703176174, guid: dbdea613832007b429f32bc82df886ae, type: 3}
   enemy_a: {fileID: 134166585727964317, guid: a97a840eefda00c438c99c9306e36eac, type: 3}
-  enemyFInterval: 11
-  enemyAInterval: 7
+  enemyFInterval: 6
+  enemyAInterval: 22
   start: 0
 --- !u!1 &5247910705020171972
 GameObject:
