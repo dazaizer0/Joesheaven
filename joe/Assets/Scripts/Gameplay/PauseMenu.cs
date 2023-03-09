@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour
 
     void Start()
     {
+
         paused = false;
         PauseCanva.enabled = false;
         Time.timeScale = 1f;
@@ -18,14 +19,17 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
+
         if(Input.GetKeyDown(KeyCode.Escape) && paused == false)
         {
+
             PauseCanva.enabled = true;
             paused = true;
             Time.timeScale = 0f;
         }
         else if(Input.GetKeyDown(KeyCode.Escape) && paused == true)
         {
+            
             PauseCanva.enabled = false;
             paused = false;
             Time.timeScale = 1f;

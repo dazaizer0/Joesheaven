@@ -18,11 +18,15 @@ public class changeCameraMove : MonoBehaviour
 
     void Update()
     {
-        if(changed == false){
+
+        if(changed == false)
+        {
+
             positive.SetActive(true);
             negative.SetActive(false);
-        }
-        else if(changed == true){
+        }else if(changed == true)
+        {
+
             positive.SetActive(false);
             negative.SetActive(true);
         }
@@ -30,13 +34,19 @@ public class changeCameraMove : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "Player")
         {
-            if(changed == false){
+
+            if(changed == false)
+            {
+
                 changed = true;
             }
 
-            if(changed == true){
+            if(changed == true)
+            {
+                
                 changed = false;
             }
         }

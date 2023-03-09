@@ -11,6 +11,7 @@ public class Options : MonoBehaviour
 
     void Start()
     {
+
         options.enabled = false;
 
         if(!PlayerPrefs.HasKey("music_volume"))
@@ -22,11 +23,6 @@ public class Options : MonoBehaviour
 
             Load();
         }
-    }
-
-    void Update()
-    {
-        
     }
 
     public void FullScreen()

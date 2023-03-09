@@ -23,17 +23,21 @@ public class roomLock : MonoBehaviour
 
     void Start()
     {
+
         dors.SetActive(false);
     }
 
     void Update()
     {
+
         if(can == false && end == false)
         {
+
             i += 1 * Time.deltaTime;
 
             if(i >= room_time)
             {
+
                 dors.SetActive(false);
                 Vector3 SpawnerPosition = new Vector3(room.position.x, room.position.y, room.position.z);
                 Instantiate(drop, SpawnerPosition, Quaternion.identity);
@@ -49,8 +53,10 @@ public class roomLock : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "Player" && can == true)
         {
+            
             can = false;
 
             Vector3 SpawnerPosition = new Vector3(room.position.x, room.position.y, room.position.z);

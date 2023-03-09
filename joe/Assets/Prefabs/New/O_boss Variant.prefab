@@ -53,11 +53,45 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1369075477224854213, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
       propertyPath: m_Name
-      value: O_boss
+      value: O_boss Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1369075477224854214, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 297761703447499198, guid: 61fc2483255779549897f15eca2528e0, type: 3}
+    - target: {fileID: 7756578507036043783, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
+      propertyPath: health
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 7756578507036043783, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1369075477224854210, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
+--- !u!1 &2254969705101307138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1369075477224854213, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
+  m_PrefabInstance: {fileID: 987603451497889735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1218293714676505439
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2254969705101307138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 03182adbad9c2e74996d8662d49f109c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

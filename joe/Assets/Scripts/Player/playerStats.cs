@@ -59,7 +59,7 @@ public class playerStats : MonoBehaviour
         if(healt < 100)
         {
 
-            healt += 1 * (Time.deltaTime / 6);
+            healt += 1 * (Time.deltaTime / 3);
         }
 
         // totext
@@ -79,7 +79,9 @@ public class playerStats : MonoBehaviour
         {
 
             healt = 0;
-            SceneManager.LoadScene(0);
+
+            string aScene = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(aScene);
             
             PlayerPrefs.DeleteKey("act_float");
         }

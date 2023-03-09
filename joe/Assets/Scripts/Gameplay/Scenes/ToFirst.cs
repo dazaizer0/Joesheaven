@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class ToFirst : MonoBehaviour
 {
+    
     void OnTriggerEnter2D(Collider2D other)
     {
+
         if (other.tag == "Player")
         {
+
             SceneManager.LoadScene("StageOne");
         }
-
     }
 }
