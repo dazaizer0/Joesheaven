@@ -76,7 +76,6 @@ public class PlayerController : MonoBehaviour
     {
 
         shooteffect.Play();
-        PLAYER player = new PLAYER();
 
         GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
         bullet.AddComponent<Rigidbody2D>().gravityScale = 0;

@@ -93,7 +93,7 @@ public class playerStats : MonoBehaviour
         if (other.tag == "damage")
         {
 
-            healt -= 1;
+            healt -= 0.5f;
             totext(health_text, healt);
             damage_taken();
         }
