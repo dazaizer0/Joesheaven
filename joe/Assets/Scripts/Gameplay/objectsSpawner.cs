@@ -19,7 +19,7 @@ public class objectsSpawner : MonoBehaviour
         for(int i = 0; i < howManyObjects; i++)
         {
 
-            Vector3 randomPos = new Vector3(Random.Range(room.transform.position.x - 3.5f, room.transform.position.x + 3.5f), Random.Range(room.transform.position.y - 3.5f, room.transform.position.y + 3.5f));
+            Vector3 randomPos = new Vector3(Random.Range(room.transform.position.x - 3, room.transform.position.x + 3), Random.Range(room.transform.position.y - 3.5f, room.transform.position.y + 3.5f));
             Instantiate(objectToSpawn, randomPos, Quaternion.identity);
         }
     }

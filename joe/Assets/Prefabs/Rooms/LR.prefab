@@ -2529,7 +2529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 8522050281625855332, guid: 947bfd43d4790104ea3956276127029e, type: 3}
   room: {fileID: 1982205314345556}
-  howManyObjects: 4
+  howManyObjects: 3
 --- !u!1 &1498489192007552319
 GameObject:
   m_ObjectHideFlags: 0

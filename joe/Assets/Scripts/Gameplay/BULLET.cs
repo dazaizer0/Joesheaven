@@ -48,6 +48,18 @@ public class BULLET : MonoBehaviour
 
             playEffect();
         }
+
+        if (other.tag == "miniboss")
+        {
+
+            playEffect();
+        }
+
+        if (other.tag == "boss")
+        {
+
+            playEffect();
+        }
     }
 
     public void playEffect()

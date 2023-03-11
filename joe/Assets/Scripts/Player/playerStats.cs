@@ -98,6 +98,22 @@ public class playerStats : MonoBehaviour
             damage_taken();
         }
 
+        if (other.tag == "miniboss")
+        {
+
+            healt -= 1f;
+            totext(health_text, healt);
+            damage_taken();
+        }
+
+        if (other.tag == "boss")
+        {
+
+            healt -= 1.3f;
+            totext(health_text, healt);
+            damage_taken();
+        }
+
         if (other.tag == "drop")
         {
 
@@ -137,6 +153,18 @@ public class playerStats : MonoBehaviour
         }
 
         if (other.tag == "shoot_damage")
+        {
+
+            damage_true.enabled = false;
+        }
+
+        if (other.tag == "miniboss")
+        {
+
+            damage_true.enabled = false;
+        }
+
+        if (other.tag == "boss")
         {
 
             damage_true.enabled = false;

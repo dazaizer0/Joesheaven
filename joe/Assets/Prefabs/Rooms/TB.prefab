@@ -3114,7 +3114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToSpawn: {fileID: 8522050281625855332, guid: 947bfd43d4790104ea3956276127029e, type: 3}
   room: {fileID: 1974744948600924}
-  howManyObjects: 4
+  howManyObjects: 2
 --- !u!1001 &1640763563123472681
 PrefabInstance:
   m_ObjectHideFlags: 0

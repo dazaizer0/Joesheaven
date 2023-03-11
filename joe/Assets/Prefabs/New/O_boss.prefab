@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: O_boss
       objectReference: {fileID: 0}
+    - target: {fileID: 134166585727964317, guid: a97a840eefda00c438c99c9306e36eac, type: 3}
+      propertyPath: m_TagString
+      value: boss
+      objectReference: {fileID: 0}
     - target: {fileID: 134166585727964318, guid: a97a840eefda00c438c99c9306e36eac, type: 3}
       propertyPath: m_Color.b
       value: 0.8947431

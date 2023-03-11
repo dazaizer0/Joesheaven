@@ -55,10 +55,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: O_boss Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1369075477224854213, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
+      propertyPath: m_TagString
+      value: boss
+      objectReference: {fileID: 0}
     - target: {fileID: 1369075477224854214, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 297761703447499198, guid: 61fc2483255779549897f15eca2528e0, type: 3}
+      objectReference: {fileID: -879465445, guid: 187b9f3e1adc8e3439d642f2005caab8, type: 3}
+    - target: {fileID: 7756578507036043783, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
+      propertyPath: speed
+      value: 4.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7756578507036043783, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
       propertyPath: health
       value: 69
@@ -66,6 +74,10 @@ PrefabInstance:
     - target: {fileID: 7756578507036043783, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756578507036043783, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}
+      propertyPath: stoppingDistance
+      value: 2.2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1369075477224854210, guid: 48c918a60fa5d794582da62eec8ae12d, type: 3}

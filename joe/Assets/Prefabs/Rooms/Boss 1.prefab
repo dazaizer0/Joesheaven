@@ -573,7 +573,7 @@ MonoBehaviour:
   sp3: {fileID: 8168771407016124820}
   sp4: {fileID: 8168771407016124820}
   sp5: {fileID: 3052019445143307124}
-  enemy_f: {fileID: 1558351257703176174, guid: dbdea613832007b429f32bc82df886ae, type: 3}
+  enemy_f: {fileID: 1145987338102385951, guid: a07647cf98dcaf847a6d02ec9e04a116, type: 3}
   enemy_a: {fileID: 134166585727964317, guid: a97a840eefda00c438c99c9306e36eac, type: 3}
   enemyFInterval: 6
   enemyAInterval: 22
