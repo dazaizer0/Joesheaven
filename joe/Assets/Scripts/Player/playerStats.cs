@@ -59,7 +59,7 @@ public class playerStats : MonoBehaviour
         if(healt < 100)
         {
 
-            healt += 1 * (Time.deltaTime / 3);
+            healt += 1 * (Time.deltaTime / 4);
         }
 
         // totext
