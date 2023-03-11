@@ -48,12 +48,23 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     
-
     public void Resume()
     {
 
         PauseCanva.enabled = false;
         paused = false;
         Time.timeScale = 1f;
+    }
+
+    public void Github()
+    {
+        
+        Application.OpenURL("https://github.com/dazaizer0");
+    }
+
+    public void Youtube()
+    {
+        
+        Application.OpenURL("https://www.youtube.com/@dazaizer0");
     }
 }
